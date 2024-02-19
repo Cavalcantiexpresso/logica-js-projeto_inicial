@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário da Empresa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulário da Empresa</h1>
+        <form id="formEmpresa">
+
+            <label for="facilidadeUso">Facilidade de Uso:</label>
+            <label for="facilidadeUsoAvaliacao">Como você avalia a facilidade de uso dos nossos produtos?</label>
+            <select id="facilidadeUsoAvaliacao" required>
+                <option value="">Selecione uma opção</option>
+                <option value="1">1 - Muito difícil</option>
+                <option value="2">2 - Difícil</option>
+                <option value="3">3 - Neutro</option>
+                <option value="4">4 - Fácil</option>
+                <option value="5">5 - Muito fácil</option>
+            </select>
+
+            <label for="dificuldades">Você teve dificuldades ao usar nossos produtos? Se sim, quais foram?</label>
+            <textarea id="dificuldades" required></textarea>
+
+            <label for="designAtrativo">Design e Layout:</label>
+            <label for="designAtrativoAvaliacao">O design dos nossos produtos é atraente para você?</label>
+            <select id="designAtrativoAvaliacao" required>
+                <option value="">Selecione uma opção</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="layoutFacilita">O layout dos nossos produtos facilita a sua interação e compreensão?</label>
+            <select id="layoutFacilita" required>
+                <option value="">Selecione uma opção</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="suporteAvaliacao">Suporte ao Cliente:</label>
+            <label for="suporteAvaliacao">Como você avalia o suporte ao cliente que recebeu ao usar nossos
+                produtos?</label>
+            <select id="suporteAvaliacao" required>
+                <option value="">Selecione uma opção</option>
+                <option value="1">1 - Insatisfatório</option>
+                <option value="2">2 - Pouco satisfatório</option>
+                <option value="3">3 - Neutro</option>
+                <option value="4">4 - Satisfatório</option>
+                <option value="5">5 - Muito satisfatório</option>
+            </select>
+
+            <label for="suporteResolucao">Em caso de problemas, você conseguiu resolver suas questões de forma
+                satisfatória?</label>
+            <textarea id="suporteResolucao" required></textarea>
+
+            <label for="expectativasAtendidas">Expectativas vs. Realidade:</label>
+            <label for="expectativasAtendidas">Nossos produtos atenderam às suas expectativas? Se não, em que aspectos
+                falhamos?</label>
+            <textarea id="expectativasAtendidas" required></textarea>
+
+            <label for="melhorias">O que você gostaria de ver melhorado ou adicionado aos nossos produtos no
+                futuro?</label>
+            <textarea id="melhorias" required></textarea>
+
+            <label for="feedbackAdicional">Feedback Adicional:</label>
+            <label for="feedbackAdicional">Você tem algum outro comentário ou sugestão que gostaria de compartilhar
+                conosco?</label>
+            <textarea id="feedbackAdicional" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
