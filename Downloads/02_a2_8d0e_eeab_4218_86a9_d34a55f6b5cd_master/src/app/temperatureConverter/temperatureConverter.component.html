@@ -1,0 +1,14 @@
+<div class="layout-column align-items-center mt-50">
+
+  <section class="layout-row align-items-center justify-content-between">
+    <label>Celsius: </label>
+    <input id="celsius" [(ngModel)]="celsius" (input)="converCelsiusToFahrenheit()" type="number" class="large"
+      data-test-id="celsius-input" />
+  </section>
+
+  <section class="layout-row align-items-center justify-content-between">
+    <label>Fahrenheit: </label>
+    <input id="fahrenheit" [(ngModel)]="fahrenheit" (input)="converTFahrenheitToCelsius()" type="number" class="large"
+      data-test-id="fahrenheit-input" />
+  </section>
+</div>
